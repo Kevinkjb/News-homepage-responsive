@@ -1,0 +1,499 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-size: 15px;
+}
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Inter', sans-serif;
+}
+
+p{
+    line-height: 1.5;
+    color: hsl(236, 13%, 42%);
+    font-family: 'Inter', sans-serif;
+    font-size: 13px;
+}
+hr{
+    width: 16.5rem;
+}
+
+/* Logo section */
+
+.logo{
+    font-weight: 800;
+    font-size: 4rem;
+    color: hsl(240, 100%, 5%);
+}
+
+/* Nav items section */
+
+.navbar{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    width: 66rem;
+    margin: 0 auto;
+}
+.nav-list{
+    display: flex;
+}
+
+.nav-item, .nav-link{
+    text-decoration: none;
+    list-style-type: none;
+    padding: 0 1rem;
+    color: hsl(236, 13%, 42%);
+    font-family: 'Inter', sans-serif;
+}
+.nav-link:hover{
+    color: hsl(5, 85%, 63%);
+}
+
+.hamburger{
+    display: none;
+    cursor: pointer;
+}
+
+.bar{
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+    background-color: #000;
+}
+
+
+/* Main grid content */
+
+.desktop-grid-section{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 2rem;
+    margin-top: 2rem;
+    width: 70rem;
+    max-width: 70rem;
+    margin: 0 auto;
+    padding: 2rem;
+
+}
+
+.main-grid-section-one{
+    grid-column: 1/3;
+    grid-row: 1/2;
+}
+
+.main-content-section{
+    margin-left: 1.6rem;
+}
+
+.desktop-image{
+    width: 43rem;
+    height: 20rem;
+    margin:0 auto;
+}
+.desktop-paragraph{
+    padding: 1rem 0 1rem 0;
+    margin: 1.5rem 0 1.5rem 0;
+    width: 18.4rem;
+}
+
+.desktop-heading-section{
+    display: flex;
+
+}
+
+.main-title{
+    color: hsl(240, 100%, 5%);
+    font-family: 'Inter', sans-serif;
+    font-weight: 800;
+    font-size: 3rem;
+    margin: 2rem 1rem 2rem 0;
+    width: 20rem;
+}
+
+.main-btn{
+    background-color: hsl(5, 85%, 63%);
+    color:  hsl(240, 7%, 92%);
+    padding: .8rem 2.5rem;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    border: none;
+    margin-top: 2.4rem;
+}
+.main-btn:hover{
+    background-color: hsl(240, 100%, 5%);
+}
+
+
+
+/* New Section */
+
+.new-title{
+    color: hsl(35, 77%, 62%);
+    font-family: 'Inter', sans-serif;
+    font-size: 2rem;
+}
+
+.new-section{
+    display: flex;
+    flex-direction: column;
+    padding: 2.2rem;
+    width: 21rem;
+    height: 35rem;
+    background-color: hsl(240, 100%, 5%);
+}
+
+.new-content{
+    margin: 2rem 0;
+    color: #fff;
+}
+.new-content p{
+    padding: 1rem 1rem 1rem 0;
+}
+.main-grid-section-two{
+    grid-column: 3/4;
+    grid-row: 1/2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Gaming content styling */
+
+
+.gaming-content-one{
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+.gaming-content-two{
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+
+.gaming-content-three{
+    grid-column: 3/4;
+    grid-row: 2/3;
+}
+
+.gaming-section{
+    grid-column: 1/4;
+    display: flex;
+    justify-content: space-around;
+}
+
+.gaming-info{
+    display: flex;
+    width: 20rem;
+    margin-top: 3rem;
+}
+
+.retro-image{
+    width: 5rem;
+    height: 7.6rem;
+    margin-bottom: 1rem;
+    margin-right: 1rem;
+}
+.gaming-title-number{
+    color: hsl(236, 13%, 42%);
+    opacity: .5;
+    font-family: 'Inter', sans-serif;
+}
+
+.gaming-title, .gaming-title-number{
+    margin-bottom: 10px;
+}
+.gaming-paragraph{
+    line-height: 1.5;
+    color: hsl(236, 13%, 42%);
+}
+.gaming-title{
+    color: hsl(240, 100%, 5%);
+    opacity: .8;
+}
+
+.attribution{
+    display: flex;
+    margin-top: 5rem;
+    background-color: rgb(235, 237, 238);
+    height: 5rem;
+    align-items: center;
+    justify-content: center;
+}
+
+
+@media screen and (max-width: 1100px) {
+
+    .navbar{
+        width: 50rem;
+    }
+    .desktop-grid-section{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        width: 54rem;
+        max-width: 54rem;
+        margin: 0 auto;
+    }
+
+    .desktop-image{
+        width: 50rem;
+        height: 20rem;
+        margin:0 auto;
+    }
+    .desktop-paragraph{
+        padding: 1rem 0 1rem 0;
+        margin: 1.5rem 0 1.5rem 0;
+        width: 18.4rem;
+    }
+
+    .main-grid-section-two{
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+
+    .new-section{
+        width: 24rem;
+    }
+    hr{
+        width: 18.6rem;
+    }
+    
+    .main-content-section{
+        margin-left: 5.2rem;
+    }
+    .desktop-heading-section{
+        display: flex;
+    
+    }
+
+    .gaming-section{
+        display: flex;
+        flex-direction: column;
+        grid-column: 2/3;
+        grid-row: 2/3;
+    }
+
+}
+
+
+@media screen and (max-width: 860px) {
+
+    .navbar{
+        width: 40rem;
+    }
+    .hamburger{
+        display: block;
+        margin-left: 38rem;
+        position: fixed;
+        transition: .3s ease;
+    }
+
+    .hamburger.active .bar:nth-child(2){
+        opacity: 0;
+    }
+    .hamburger.active .bar:nth-child(1){
+        transform: translateY(8px) rotate(46deg);
+    }
+    .hamburger.active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-46deg);
+    }
+
+    .nav-list{
+        display: flex;
+        position: fixed;
+        right: -100%;
+        top: 0;
+        gap: 0;
+        flex-direction: column;
+        background-color: #fff;
+        width: 40%;
+        height: 100%;
+        align-items: center;
+        text-align: center;
+        transition: .3s;
+    }
+
+    .nav-item{
+        margin: 3rem 0;
+    }
+    .nav-list.active{
+        right: 0;
+    }
+    .hamburger.active{
+        margin-left: 42rem;
+        transition: .3s ease;
+    }
+    .desktop-grid-section{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 50rem;
+        max-width: 50rem;
+    
+    }
+    .desktop-image{
+        width: 40rem;
+        max-width: 40rem;
+        height: 20rem;
+    }
+    
+    .desktop-heading-section{
+        width: 40rem;
+        max-width: 40rem;
+    }
+    
+    .new-section{
+        width: 25rem;
+    }
+    
+    .gaming-section{
+        display: flex;
+        width: 25rem;
+    }
+    hr{
+        width: 20rem;
+    }
+    
+    
+    }
+
+    @media screen and (max-width: 780px) {
+
+        .navbar{
+            width: 25rem;
+        }
+
+        .hamburger{
+            margin-left: 23rem;
+        }
+
+        .hamburger.active{
+            margin-left: 33rem;
+        }
+
+        .desktop-grid-section{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            max-width: 48.75rem;
+        }
+        .desktop-image{
+            width: 25rem;
+            max-width: 25rem;
+            height: 20rem;
+        }
+        
+        .desktop-heading-section{
+            display: flex;
+            flex-direction: column;
+            width: 25rem;
+            max-width: 25rem;
+        }
+        
+        .main-content-section{
+            margin-left: 0;
+        }
+           
+        }
+
+    @media screen and (max-width: 430px) {
+
+        .navbar{
+            width: 20rem;
+        }
+
+        .hamburger{
+            margin-left: 18.5rem;
+        }
+
+        .hamburger.active{
+            margin-left: 20rem;
+        }
+
+        .nav-list{
+            width: 60%;
+            height: 100%;
+        }
+
+        .desktop-grid-section{
+                width: 100%;
+                max-width: 48.75rem;
+           }
+        .desktop-image{
+               width: 20rem;
+               max-width: 20rem;
+               height: 20rem;
+           }
+           
+        .desktop-heading-section{
+               width: 20rem;
+               max-width: 20rem;
+        }
+           
+        .main-content-section{
+               margin-left: 0;
+           }
+           
+        .new-section{
+               width: 20rem;
+               max-width: 20rem;
+           
+           }
+        .gaming-section{
+               width: 20rem;
+   
+           }
+           
+        hr{
+               width: 15rem;
+           }
+              
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
